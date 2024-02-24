@@ -1,0 +1,53 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expense Tracker</title>
+    <link rel="stylesheet" href="style7.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Expense input form section -->
+        <section id="expense-form">
+            <h2 align="center">Expense Input Form</h2>
+            <form id="expense-form">
+                <label for="date">Date:</label>
+                <input type="date" id="date" name="date" required>
+
+                <label for="amount">Amount:</label>
+                <input type="number" id="amount" name="amount" required>
+
+                <label for="category">Category:</label>
+                <input type="text" id="category" name="category" required>
+
+                <label for="description">Description:</label>
+                <input type="text" id="description" name="description"><br><hr>
+
+                <button type="submit">Add Expense</button>
+            </form><br><hr>
+        </section>
+
+        <!-- Expense list display section -->
+        <section id="expense-list">
+            <h2>Expense List</h2>
+            <label for="groceries">groceries</label>
+                <input type="groceries" placeholder="$50" required><br><br>
+                <label for="shopping">shopping</label>
+                <input type="shopping" placeholder="$100" required><br><br>
+                <label for="movie">movie</label>
+                <input type="movie" placeholder="$50" required><br><br>
+
+            <ul id="expenses"></ul>
+        </section><hr>
+
+        <!-- Expense summary section -->
+        <section id="expense-summary">
+            <h2>Expense Summary</h2>
+            <p>Total Amount Spent: <span id="total-amount">$200</span></p>
+        </section>
+    </div>
+</body>
+</html>
+     
